@@ -16,7 +16,7 @@ class VideoCamera(object):
     """ Takes the Real time Video, Predicts the Emotion using pre-trained model. """
 
     def __init__(self):
-        self.video = cv2.VideoCapture(cv2.CAP_V4L2)
+        self.video = cv2.VideoCapture(0)
 
     def __del__(self):
         self.video.release()

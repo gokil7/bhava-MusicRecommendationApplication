@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <title>bhāva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="/static/resources/images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/emotionStyle.css" />
+</head>
+
+<body>
+    <article class="heading">
+        <a href="http://127.0.0.1:5000/">
+            <h1 class="title">bhāva</h1>
+            <hr class="titleline">
+            <div class="titletag">
+                <p>MUSIC PLAYER </p>
+            </div>
+        </a>
+    </article>
+    <section class="player">
+        <!-- Main Music Player interface -->
+        <div class="details">
+            <!-- Info about song -->
+            <div class="track-art"></div>
+            <div class="sub-detail">
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <!--Play/Pause/Forward/Backward Buttons -->
+            <div class="prev-track" onclick="prevTrack()"><i class="fas fa-step-backward fa-2x"></i></div>
+            <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-pause fa-2x"></i></div>
+            <div class="next-track" onclick="nextTrack()"><i class="fas fa-step-forward fa-2x"></i></div>
+        </div>
+        <div class="slider_container">
+            <!-- Seekbar with time duration -->
+            <div class="time">
+                <div class="current-time">00:00</div>
+                <div class="total-duration">00:00</div>
+            </div>
+            <div class="slide">
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+            </div>
+        </div>
+    </section>
+    <section class="sidecontainer">
+        <!-- Sidecontainer with info on mood, quotes and authors -->
+        <article class="info">
+            <h4 class="moodtitle">Your Mood</h4>
+            <hr class="moodline">
+            <img src="/static/resources/images/sad.png" class="emoji">
+            <h6 class="moodtext">Sad</h6>
+            <div class="quote">"Listen to some<br>Happy Genres"</div>
+            <hr class="line">
+            <h5 class="author"><i class="fas fa-code"></i> Project  by  Gokil</h5>
+        </article>
+    </section>
+    <script src="/static/emotionSad.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&family=Lato&family=Lexend+Deca&family=Sora:wght@200;300;400&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+/*Contains styling for Music player name*/
+/*Line 16-26*/
+section .heading {
+
+    z-index: 1;
+}
+
+.title {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-top: 15px;
+    z-index: 5;
+    color: rgb(238, 66, 66);
+    animation: titleltr 0.5s;
+}
+
+.titleline {
+    width: 70px;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.192);
+    margin-left: 21px;
+    animation: titleltr 0.4s;
+}
+
+.titletag {
+    width: 300px;
+    font-family: Lato;
+    font-weight: 400;
+    padding-left: 20px;
+    font-size: 14px;
+    color: rgba(158, 152, 152, 0.836);
+    animation: titleltr 0.5s;
+    transition: color 1s;
+}
+
+.titletag:hover {
+    color: rgb(238, 66, 66);
+}
+
+@keyframes titleltr {
+    0% {
+        margin-left: -20%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+/*Contains styling for Start Button*/
+/*Line 28-35*/
+.container {
+    height: 450px;
+    width: 450px;
+    display: block;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 8%;
+    margin-left: 23%;
+}
+
+.container::after,
+.container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    border: 2px solid rgb(238, 66, 66);
+    border-radius: 50%;
+    animation: animate 1.7s infinite;
+    z-index: 4;
+}
+
+@keyframes animate {
+    0% {
+        width: 450px;
+        height: 450px;
+    }
+
+    100% {
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
+.start {
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.534);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: box-shadow 700ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+    z-index: 5;
+}
+
+.start:hover {
+    box-shadow: 0 0 35px 5px rgba(255, 255, 255, 0.22);
+    transform: translate3d(0px, -6px, 0px);
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+/*--------------------------------------------------------------*/
+
+
+/*Contains styling for Dynamic Background*/
+/*Line 38-1286*/
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+section .row {
+    position: relative;
+    top: -65%;
+    width: 100%;
+    display: flex;
+    padding-left: 10px 0;
+    white-space: nowrap;
+    font-size: 50px;
+    transform: rotate(-30deg);
+}
+
+i {
+    color: rgba(44, 43, 43, 0.5);
+    transition: 1s;
+    padding: 0 5px;
+    cursor: default;
+}
+
+i:hover {
+    transition: 0s;
+    color: rgb(231, 46, 46);
+    text-shadow: 0 0 120px rgb(175, 78, 78, 0.5);
+}
+
+section .row div {
+    animation: animate1 150s linear infinite;
+    animation-delay: -150s;
+}
+
+section .row div:nth-child(2) {
+    animation: animate2 150s linear infinite;
+    animation-delay: -75s;
+}
+
+
+@keyframes animate1 {
+    0% {
+        transform: translate(100%);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(-200%);
+    }
+}
+
+section .row:nth-child(even) div {
+    animation: animate3 150s linear infinite;
+    animation-delay: -150s;
+}
+
+section .row:nth-child(even) div:nth-child(2) {
+    animation: animate4 150s linear infinite;
+    animation-delay: -75s;
+}
+
+
+@keyframes animate3 {
+    0% {
+        transform: translate(-100%);
+    }
+
+    100% {
+        transform: translate(100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translate(-200%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+/*Contains styling for Side Block*/
+/*Line 1289-1296*/
+.sidecontainer {
+    top: 10px;
+    bottom: 12px;
+    right: 10px;
+    width: 350px;
+    position: absolute;
+    background: rgb(48, 40, 40);
+    transition-delay: 1s;
+    animation: background 10s cubic-bezier(1, 0, 0, 1) infinite;
+    z-index: 4;
+    transition: box-shadow 700ms;
+    border-radius: 10px;
+}
+
+@keyframes background {
+    0% {
+        background-color: rgba(245, 142, 142, 0.377);
+    }
+
+    33% {
+        background-color: rgba(184, 245, 184, 0.521);
+    }
+
+    67% {
+        background-color: rgba(174, 243, 220, 0.514);
+    }
+
+    100% {
+        background-color: rgba(230, 195, 209, 0.553);
+    }
+}
+
+
+.sidecontainer:hover {
+    box-shadow: 0 0 35px 5px rgba(231, 232, 238, 0.3);
+}
+
+.line {
+    width: 335px;
+    background: rgba(255, 255, 255, 0.815);
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 2.5px;
+
+}
+
+article .info {
+    right: 9px;
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    top: 400px;
+    font-family: Lexend Deca;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 65px;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.author {
+    font-family: Lato;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(31, 30, 30);
+}
+
+/*--------------------------------------------------------------*/

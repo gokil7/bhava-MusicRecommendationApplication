@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bhāva</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='startStyleFinal.css') }}">
+    <link rel="shortcut icon" href="/static/resources/images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Font Awesome Icons url reference -->
+</head>
+
+<body>
+    <section>
+        <article class="heading">
+            <!-- Music player icon at top left-->
+            <a href="http://127.0.0.1:5000/">
+                <h1 class="title">bhāva</h1>
+                <hr class="titleline">
+                <div class="titletag">
+                    <p>MUSIC PLAYER </p>
+                </div>
+            </a>
+        </article>
+        <!-- Start Button for the form -->
+        <article class="container">
+            <article class="start">
+                <form action="{{ url_for('predict')}}" method="post">
+                    <input type="image" src="/static/resources/images/buttonGrayStartDark.png" width="450px"
+                        height="450px">
+                </form>
+            </article>
+        </article>
+
+        <!-- Repeated icons in the dynamic background -->
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+            <div>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-stop"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-podcast"></i>
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-eject"></i>
+                <i class="fas fa-volume-down"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-play-circle"></i>
+                <i class="fas fa-stop-circle"></i>
+                <i class="fas fa-pause-circle"></i>
+                <i class="fas fa-microphone-alt-slash"></i>
+                <i class="fas fa-random"></i>
+                <i class="fas fa-music"></i>
+                <i class="fas fa-microphone-alt"></i>
+                <i class="fas fa-headphones"></i>
+                <i class="fas fa-file-audio"></i>
+            </div>
+        </div>
+    </section>
+
+    <article class="sidecontainer">
+        <!-- Sidecontainer with info on project and authors -->
+        <article class="info">
+            Emotion <br> Based <br> Music Player
+            <hr class="line">
+            <h5 class="author"><i class="fas fa-code"></i> Group Project by Anurag &amp; Gokil</h5>
+        </article>
+    </article>
+
+</body>
+
+</html>

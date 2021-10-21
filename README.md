@@ -20,6 +20,7 @@ A Music Recommendation web application which detects the mood of the user and ac
 <img src="https://user-images.githubusercontent.com/51751331/138317356-6c61e9b1-0bb8-4e51-9edf-8eae19e18a27.jpg" width="80%"></img> 
 
 ## Modules Used
+<a href="https://github.com/gokil7/bhava-MusicRecommendationApplication/blob/main/requirements.txt"> Requirements.txt</a>
 
 ## Future Work
 * To host this app live, probably to Heroku. Not able to currently do this, because as of now, project use OpenCV's cv2.VideoCapture() to capture the frames from webcam, but the drawback of this method being it works on the computer where the code is hosted. If I were to host this app live, then the project will be hosted on a Heroku server and thus will access that server's camera, which is not what we want, we want the client's camera, also there is no camera in server.., so to work around this WebRTC is used. So future work will be to implement WebRTC protocols in the project to communicate between server and client.
